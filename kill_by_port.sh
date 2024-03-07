@@ -16,7 +16,7 @@ fi
 PORT=$1
 
 # 使用lsof命令找到监听在输入端口上的所有进程PID
-PIDS=$(lsof -i tcp:${PORT} -t 2>/dev/null)
+PIDS=$(lsof -i ${PORT} -t 2>/dev/null)
 
 # 检查是否有找到PID
 if [ -z "$PIDS" ]; then
