@@ -2,7 +2,7 @@
 
 🔪 simply kill all the processes related to a port.
 
-## Config
+## Usage
 
 1. find your .zshrc / .bashrc / .bash_profile / .profile
 
@@ -10,4 +10,10 @@
 
 ```bash
 alias kbp="sh /path/to/kill-by-port.sh"
+```
+
+3. simply kill 🔪
+
+```bash
+kbp 3000
 ```
